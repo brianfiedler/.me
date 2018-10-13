@@ -29,7 +29,8 @@ footer{
 .menu-item:hover{
     background-color: black;
     color: white;
-    border-radius: 7%;
+    border-top-right-radius: 7%;
+    border-top-left-radius: 7%;
 }
 .active{
     background-color:#3D71BF !important;
@@ -44,12 +45,13 @@ footer{
     align-self: flex-end;
     cursor: pointer;
     min-width:80px;
+    height:41px;
 }
 
 .banner{
     background-image: url("/images/banner-header.png");
     resize: vertical;
-    border-bottom: 5px inset black !important;;
+    border-bottom: 5px inset #4a4a4a !important;;
     min-width:630px;
 }
 .banner-active{
@@ -76,14 +78,125 @@ footer{
 .title:hover{    
     transform: rotate(7deg);
 }
-
+.git-logo
+{
+    position: absolute;
+    top: 54px;
+    right: 95px;
+}
 #profile
 {
     border-radius: 7px;
-    height: 80px;
+    height: 85px;
     width:80px;
-    background-color: coral;
+    background-color: rgb(74, 74, 74);
     position: absolute;
     right: 20px;
-    top:10px;
+    top:8px;
+    box-shadow: 5px 0 8px #888888;
+}
+#profile-pic-container-status{
+    text-align: center;
+    border-radius: 50%;
+    height: 67px;
+    width:67px;
+    background-color: red;
+    position: absolute;
+    right: 8px;
+    top:9px;
+}
+.profile-pic-container
+{
+    text-align: center;
+    border-radius: 50%;
+    height: 69px;
+    width:69px;
+    background-color: #b3b3b3;
+    position: absolute;
+    right: 5.5px;
+    top:9px;
+}
+#profile-pic
+{
+    color: white;
+    margin-top:3.5px;
+    font-size: 12px;
+}
+#profile-status-label{ 
+    position: absolute;   
+    font-size: 12px !important; 
+    font-family: 'Courier New', Courier, monospace;
+    color: white ;
+    bottom:-16;
+    
+}
+.green-text
+{       
+    color:limegreen !important;
+}
+.red-text
+{
+    
+    color:rgb(235, 38, 38) !important;
+}
+.orange-text
+{
+    color:rgb(230, 146, 50) !important;
+}
+.grey-text
+{
+    color:rgb(121, 121, 121) !important;
+}
+.green-bg
+{    
+    background-color: limegreen !important;
+}
+.red-bg
+{
+    background-color:rgb(235, 38, 38) !important;
+}
+.orange-bg
+{
+    background-color:rgb(230, 146, 50) !important;
+}
+.grey-bg
+{
+    background-color:rgb(121, 121, 121) !important;
+}
+.green-bdr
+{    border: 1px ridge limegreen !important;
+}
+.red-bdr
+{
+    border: 1px ridge rgb(235, 38, 38) !important;
+}
+.orange-bdr
+{
+    border: 1px ridge rgb(230, 146, 50) !important;
+}
+.grey-bdr
+{
+    border: 1px ridge rgb(121, 121, 121) !important;
+}
+
+#profile-satus-icon
+{
+    height: 10px;
+    width: 10px;
+   border-radius: 50% !important;
+   margin-top:-2;
+}
+.offline-status
+{
+    height: 10px;
+    width: 10px;
+    background-color: grey;
+   border-radius: 50% !important;
+}
+.idle-status
+{
+    height: 10px;
+    width: 10px;
+    background-color: rgb(205, 125, 50);
+   border-radius: 50% !important;
 }
