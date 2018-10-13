@@ -1,7 +1,13 @@
 
 $(document).ready(function () {
-    
+    $.getScript("scripts/profile.js", function() {
+        loadProfile();
 
+        window.setInterval(function(){
+            loadProfile();
+        }, 30000);
+     });
+    
     //load main content
     $("#main-content").load("default.html");
     
@@ -10,9 +16,18 @@ $(document).ready(function () {
 
     //get ip address for user
     $.getJSON("http://jsonip.com/?callback=?", function (data) {
-        console.log(data);
+        //console.log(data);
         document.getElementById('ipcode').innerHTML = data.ip;
-    });    
+    });  
+    
+/*     const url = "http://jsonip.com/?callback";
+    fetch(url)
+    .then(data =>{return data.json()})
+    .then(response => {
+            console.log(response)
+    }) */
+    
+    
 });
 
 
@@ -33,8 +48,7 @@ var loadContent = function(html, id) {
         var selectedMenutItem = document.getElementById(id);
         var bannerDiv = document.getElementById('banner-id');
         selectedMenutItem.className += " active";
-        bannerDiv.className = bannerDiv.className.replace("banner-active", "banner");
-        bannerDiv.className = bannerDiv.className.replace("banner", "banner-active");
+        bannerDiv.className = "banner-active";
     }
     else
     {

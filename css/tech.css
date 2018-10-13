@@ -1,0 +1,33 @@
+#playground-banner
+{
+   width:99%;
+   height:450px;
+   background-image: url('/images/playground_banner.png');
+}
+.hidden{
+    max-height: 0 !important;
+    -webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    transition: height 1s ease;
+    overflow: hidden;
+    visibility: hidden;
+}
+#playground-hotspot
+{
+    height:348px;
+    width: 627px;
+    position: absolute;
+    top: 91px;
+    left: 92px;
+    cursor: pointer;
+}
+#playground-close
+{
+    color: #38373a;
+    position: absolute;
+    top: 45px;
+    right: 60px;
+    cursor: pointer;
+    font-family: serif;
+}
