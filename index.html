@@ -1,0 +1,38 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/main.js" type="application/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/birds.css">
+    <link rel="stylesheet" href="css/flipcard.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="banner-id" class="banner flex-container">
+        <div class="title" onclick="loadContent('default',0)">
+            *.me
+        </div>
+        <span id="tagline">everything needed in one place</span>
+        <header class="flex-container">
+            <div id="menu" class="main-menu flex-container">
+                <div id="id1" class="menu-item" onclick="loadContent('aws', id)">tech</div>
+                <div id="id2" class="menu-item" onclick="loadContent('recipes', id)">food</div>
+                <div id="id3" class="menu-item" onclick="loadContent('theater', id)">video</div>
+                <div id="id5" class="menu-item" onclick="loadContent('cards', id)">cards</div>
+            </div>
+            <div id="profile" onclick="loadContent('contact', 0)">
+                <div>
+                    <img src="images/me.png" width="30px" height="30px">
+                </div>
+            </div>
+        </header>
+    </div>
+    
+    <div id="main-content" class="container"></div>    
+    <!-- <iframe src="https://discordapp.com/widget?id=397921300628242432&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe> -->
+        
+    <footer>
+            <span id="last-updated"></span>
+    </footer>
+</body>
+</html>
