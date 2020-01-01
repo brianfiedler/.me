@@ -1,8 +1,26 @@
 #playground-banner
 {
-   width:99%;
-   height:450px;
-   background-image: url('/images/playground_banner.png');
+   width:80%;
+   max-height:450px;
+   background-image: url('/images/playground_banner-hopscotch.png');
+   height: auto;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   border-radius: 5px;
+}
+#playground-banner1
+{
+   width:100%;
+   max-height:330px;
+   height: auto;
+   max-width:1300px;
+   border-radius: 5px;
+}
+#playground-banner1 img
+{
+    width: 100%;
+    height: auto;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   border-radius: 5px;
 }
 .hidden{
     max-height: 0 !important;
@@ -15,19 +33,62 @@
 }
 #playground-hotspot
 {
-    height:348px;
-    width: 627px;
+    height:239px;
+    width: 439px;
     position: absolute;
-    top: 91px;
-    left: 92px;
+    top:75px;
+    left: 338px;
     cursor: pointer;
+}
+.close-container
+{
+    padding-top:5px;
+    padding-left:5px;
+    position: absolute;
+
+}
+.playground-container
+{
+    align-self: center;
 }
 #playground-close
 {
     color: #38373a;
-    position: absolute;
-    top: 45px;
-    right: 60px;
     cursor: pointer;
     font-family: serif;
+}
+.bird-score
+{
+    position:  absolute;
+    bottom:-15px;
+    right:27px;
+    font-size: 60px;
+    color:yellow;
+    display:none;
+}
+.score-label
+{
+    position:  absolute;
+    bottom:0px;
+    right:85px;
+    font-size: 24px;
+    color:yellow;
+    display:none;
+}
+.spot2-container{
+    height:83px;
+width:162px;
+
+position: absolute;
+top: 38px;
+left:60px;
+}
+.spot2{
+
+height:78px;
+width:157px;
+position: absolute;
+top: 38px;
+left:60px;
+transform: rotate(-35deg);
 }
