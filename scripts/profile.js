@@ -1,7 +1,8 @@
 var loadProfile = function(html, id) {
     $.getJSON("https://discordapp.com/api/guilds/397921300628242432/widget.json", function (data) {
         var profileLabel = document.getElementById('profile-status-label');
-        //profileLabel.innerHTML = data.members[0].status;
+        profileLabel.innerHTML = data.members[0].status;
+        
         var colorText;
         var colorIcon;
         var colorBorder;
@@ -25,14 +26,15 @@ var loadProfile = function(html, id) {
                 colorText = " grey-text";
                 colorIcon = "grey-bg";
                 colorBorder = "grey-bdr";
+                profileLabel.innerHTML = "offline";
                 break;
         }
         
         var statusRing = document.getElementById('profile-pic-container');
         var statusIcon = document.getElementById('profile-satus-icon');
 
-        statusIcon.className = statusIcon.className.replace("green-bg", "").replace("orange-bg", "").replace("red-bg", "").replace("grey-bdr", "");
-        profileLabel.className = profileLabel.className.replace("green-text", "").replace("orange-text", "").replace("red-text", "").replace("grey-bdr", "");
+        statusIcon.className = statusIcon.className.replace("green-bg", "").replace("orange-bg", "").replace("red-bg", "").replace("grey-bg", "");
+        profileLabel.className = profileLabel.className.replace("green-text", "").replace("orange-text", "").replace("red-text", "").replace("grey-text", "");
         statusRing.className = statusRing.className.replace("green-bdr", "").replace("orange-bdr", "").replace("red-bdr", "").replace("grey-bdr", "");
 
         statusIcon.className += colorIcon;
