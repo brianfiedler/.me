@@ -1,5 +1,5 @@
 var loadProfile = function(html, id) {
-    $.getJSON("https://discordapp.com/api/guilds/397921300628242432/widget.json", function (data) {
+    $.getJSON("https://discordapp.com/api/guilds/1069400500459540481/widget.json", function (data) {
         var profileLabel = document.getElementById('profile-status-label');
         profileLabel.innerHTML = data.members[0].status;
         

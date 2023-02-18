@@ -2,18 +2,18 @@
 <head>
     <script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="scripts/main.js" type="application/javascript"></script>
-    <script src="scripts/profile.js" type="application/javascript"></script>
+    <script src="src/scripts/main.js" type="application/javascript"></script>
+    <script src="src/scripts/profile.js" type="application/javascript"></script>
     <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
-    <script src="scripts/giphy.js" type="application/javascript"></script>
-    <link rel="stylesheet" href="css/giphy.css">
-    <script src="scripts/tech.js" type="application/javascript"></script>
+    <script src="src/scripts/giphy.js" type="application/javascript"></script>
+    <link rel="stylesheet" href="src/css/giphy.css">
+    <script src="src/scripts/tech.js" type="application/javascript"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/birds.css">
-    <link rel="stylesheet" href="css/flipcard.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/tech.css">
+    <link rel="stylesheet" href="src/css/birds.css">
+    <link rel="stylesheet" href="src/css/flipcard.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/tech.css">
 </head>
 <body>
     <div id="banner-id" class="banner flex-container">        
@@ -30,17 +30,17 @@
             <!-- https://d34xub3ut0ooib.cloudfront.net/img/icon-sprite-a92abfc67bd56e2267b798b2dffb87f6.png -->
             <div class="header-action-icons">
                 <a href="https://console.aws.amazon.com/console/home?region=us-east-1" target="_default">
-                    <img class="aws-console-logo" src="images/icon-sprite-a92abfc67bd56e2267b798b2dffb87f6-black.png" height="30px" width="30px" title="AWS Console">
+                    <img class="aws-console-logo" src="src/images/icon-sprite-a92abfc67bd56e2267b798b2dffb87f6-black.png" height="30px" width="30px" title="AWS Console">
                 </a>
                 <a href="https://github.com/brianfiedler" target="_default">
-                    <img class="git-logo" src="images/git.png" height="30px" width="30px" alt="github logo" title="GigHub.Me">
+                    <img class="git-logo" src="src/images/git.png" height="30px" width="30px" alt="github logo" title="GigHub.Me">
                 </a>         
             </div>
             <div id="profile" onclick="loadContent('contact', 0)">
                 <div id="profile-pic-container" class="profile-pic-container flip-card ">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img id="profile-pic" src="images/me.png" width="60px" height="60px" style="border-radius: 50% !important;">
+                            <img id="profile-pic" src="src/images/me.png" width="60px" height="60px" style="border-radius: 50% !important;">
                         </div>
                         <div class="flip-card-back">
                             <span id="profile-status-label">offline</span>
